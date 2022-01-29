@@ -1,0 +1,27 @@
+{
+  "name": "communitycookbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robyngoodner/CommunityCookBook.git"
+  },
+  "author": "Robyn Goodner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robyngoodner/CommunityCookBook/issues"
+  },
+  "homepage": "https://github.com/robyngoodner/CommunityCookBook#readme",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.1.8"
+  }
+}
