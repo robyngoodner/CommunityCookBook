@@ -37,7 +37,7 @@ app.use('/', routes.oauth)
 //etc
 
 //System Variables
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //App Config
 app.set('view engine', 'ejs');
