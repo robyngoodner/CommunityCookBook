@@ -1,4 +1,6 @@
 module.exports = {
     oauth: require('./oauth'),
-    cookbook: require('./cookbook')
+    contributors: require('./contributors'),
+    communities: require('./communities'),
+    recipes: require('./recipes'),
 }

@@ -6,6 +6,8 @@ const contributorSchema = new Schema ({
         type: String,
         require: true
     },
+    email: String,
+    googleId: String,
     bio: String,
     recipes: [{
         type: mongoose.Schema.Types.ObjectId,

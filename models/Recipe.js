@@ -10,7 +10,7 @@ const recipeSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Community"
     },
-    name: {
+    title: {
         type: String,
         require: true
     },

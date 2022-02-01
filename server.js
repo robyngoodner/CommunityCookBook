@@ -1,5 +1,5 @@
 //External Modules
-// require('dotenv').config();
+require('dotenv').config();
 require('./models/index')
 require('./config/passport');
 const express = require('express');
@@ -29,11 +29,11 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/', routes.cookbook)
+app.use('/', routes.contributors)
 app.use('/', routes.oauth)
 
 //Internal Routes
-//app.use('/recipes, routes.recipes)
+app.use('/recipes', routes.recipes)
 //etc
 
 //System Variables
@@ -41,12 +41,6 @@ const PORT = process.env.PORT || 3000;
 
 //App Config
 app.set('view engine', 'ejs');
-
-//Routes
-// app.get('/', (req, res) => {
-//     res.render('index')
-// })
-
 
 //Server bind
 app.listen(PORT, function() {

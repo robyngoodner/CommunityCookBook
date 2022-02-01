@@ -1,0 +1,21 @@
+<%- include('../partials/header') %> 
+<%- include('../partials/navbar') %> 
+
+<h1>Recipes index page</h1>
+
+<a href="/recipes/new">Add a recipe</a>
+
+<h2>Recipes</h2>
+<% if(!recipes.length) { %> 
+    <p>There are no recipes available yet</p>
+<% } %> 
+
+<ul>
+    <% recipes.forEach(recipe => { %> 
+        <li>
+            <a href="/recipes/<%= recipe._id %>"> <%= recipe.title %></a>
+        </li>
+        <% }) %>
+</ul>
+
+<%- include('../partials/footer') %> 
