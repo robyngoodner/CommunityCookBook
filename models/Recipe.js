@@ -26,7 +26,9 @@ const recipeSchema = new Schema({
         type: String,
         require: true
     }]
-});
+}, 
+    {timestamps: true}
+);
 
 const Recipe = mongoose.model("Recipe", recipeSchema);
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 const dotenv = require('dotenv');
-dotenv.config();
+// dotenv.config();
 
 mongoose
     .connect(process.env.DATABASE_URL)
@@ -9,7 +9,7 @@ mongoose
         `MongoDB successfully connected at ${db.host}:${db.port}`
         )
     )
-    .catch((err) => console.log(`MongoDB connection gailed. Error: ${err}`));
+    .catch((err) => console.log(`MongoDB connection failed. Error: ${err}`));
 
 module.exports = {
     Community: require('./Community'),
